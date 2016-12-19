@@ -2,9 +2,9 @@
 #
 # Author Simone Roselli <simoneroselli78@gmail.com>
 #
-# Check for the presence of files in the failover directory, in the case check
-# if the main sink is still down, otherwise move the events in the spool
-# directory in order to be sent to the main sink
+# Check for the presence of files in the failover directory, in that case,
+# check if the main sink is up and then move the events in the spool directory
+# to be sent to the Kafka sink
 
 DATA_DIR=/opt/flume-ng/failover/Events
 SPOOL_DIR=/opt/flume-ng/failover/spool
